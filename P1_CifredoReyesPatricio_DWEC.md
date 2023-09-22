@@ -1,21 +1,49 @@
 # Explorando los Fundamentos del Desarrollo Web en Entornos de Cliente
+#### *Por Patricio Cifredo Reyes*
+###### 2º DAW IES Rafael Alberti
+###### DWEC - Proyecto 1
+***
+![Figura 0. Diagrama del Modelo Vista Controlador](https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)
+###### Fotografía con licencia de uso gratuito. Extraída de: https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
 
-###### *Por Patricio Cifredo Reyes*
+***
+
+## Índice
+
+0. Introducción
+
+1. Modelos de Programación en Entornos Cliente/Servidor
+
+2. Mecanismos de Ejecución de Código en un Navegador Web. Capacidades y Limitaciones de Ejecución. Compatibilidad con Navegadores Web
+
+3. Lenguajes de Programación en Entorno Cliente
+
+4. Características de los Lenguajes de Script. Ventajas y Desventajas
+
+5. Tecnologías y Lenguajes Asociados. Integración del Código con las Etiquetas HTML
+
+6. Herramientas de Programación
+
+7. Conclusiones y cierre
+
+8. Referencias
+
+***
 
 ## 0. Introducción
 
 El presente trabajo tiene como finalidad servir de introducción al área del Desarrollo Web en entornos de clientes. Para ello, realizaremos una investigación y estudio de sus conceptos básicos, sus principales modelos y de las distintas tecnologías y herramientas asociadas.
 
-## 1. Modelos de la arquitectura Web
+## 1. Modelos de Programación en Entornos Cliente/Servidor
 
 Según *García Escobedo (2012)*, los modelos de arquitecturas web establecen las relaciones existentes que se producen entre las diversas partes que componen las aplicaciones webs.
 
-Por tanto, es lógico pensar en que existirán diversas formas de que estos elementos se interrelacionen y es que desde los orígenes de las aplicaciones webs han ido apareciendo diversos enfoques.
+Por tanto, es lógico pensar en que existirán diversas formas de que estos elementos se interrelacionen. Y es que desde los orígenes del desarrolo web han ido surgiendo diversos enfoques y modelos.
 
 Algunos de ellos son:
 
 * Aplicaciones de página única (SPA): Como bien indica *Vergara (2023)* en el portal *itdo.com*, las aplicaciones de una sola página (SPA) son aplicaciones webs que cargan un solo archivo HTML que luego va actualizando  de forma dinámica a medida que se usa la aplicación.
-  Un ejemplo de esto podría ser *Gmail* ya que en todo momento la web se va actualizando sin que salgamos de ella.
++ - Un ejemplo de esto podría ser *Gmail* ya que en todo momento la web se va actualizando sin que salgamos de ella. 
 * Aplicaciones Web progresivas (PWA): Este tipo de webs utilizan distintas herramientas y tecnologías para replicar muchas de las funciones de aplicaciones. Se pueden instalar en el dispositivo deseado pero se accede a ellas a través de un navegador (aunque no es necesaria conexión para usarlas). Por tanto las PWA: "Difuminan la barrera entre la web y las aplicaciones, pudiendo realizar tareas que generalmente solo las aplicaciones nativas podían llevar a cabo." *Ramírez (2018)*.
 
 *Facebook*, podría considerarse una PWA, ya que podemos usarlo desde el navegador y en su versión web puede recibir notificaciones como si de la app nativa se tratase.
@@ -43,7 +71,7 @@ Tamkbién existen los modelos por "capas". El *departamento de Informática de l
 
 Es uno de los modelos más utilizados para el desarrollo web. Podemos suponer que una web moderna como *Amazon* se sustentará en él. Teniendo una parte fina de cliente que contiene su interfaz gráfica, un servidor de aplicación que contenga la lógica de compra-venta de la web y otros servidores a parte con toda la información de usuarios, transacciones, productos etc.
 
-## 2. Mecanismos de Ejecución de Código en un Navegador Web. Capacidades y Limitaciones de Ejecución. Compatibilidad con Navegadores Web:
+## 2. Mecanismos de Ejecución de Código en un Navegador Web. Capacidades y Limitaciones de Ejecución. Compatibilidad con Navegadores Web
 
 Para que un navegador ejecute un script de Javascript, debemos escribir el mismo en un archivo con extensión *js*, el cuál enlazaremos a un documento *html*, mediante la etiqueta "script", que luego abriremos con el navegador de preferencia. Veamos un ejemplo gráfico realizado en *VSCODE*.
 
@@ -71,7 +99,9 @@ El catálogo de lenguajes de programación es prácticamente inabarcable, existi
 
 * TypeScript: Desarrollado por Microsoft en 2012, consiste en un lenguaje que extiende JavaScript mediante nueva sintaxis y herramientas, simplificándolo y por tanto haciendo más sencillo su uso. Al contrario que JavaScript, este lenguaje permite tipar las variables y debido a ser de mayor nivel que JavaScript permite clarificar, simplificar y dar robustez a proyectos de gran envergadura. Chacón (2021) habla en su portal *profile.es* de la importancia de conocer este lenguaje ya que la mayoría de frameworks de desarrollo web lo utilizan.
 
-Otros lenguajes usados son Python, Ruby, Dardo ol PHP (aunque este está realmente enfocado al lado del servidor). Por último, 
+* Swift: Este lenguaje desarrollado por *Apple* se caracteriza por estar únicamente orientado a desarrollo en entornos iOS y MAC.  Desde la web oficial de *Apple.com* hablan de algunas aplicaciones muy usadas y que están enteramente desarrolladas en este lenguaje tales cómo: *Airbnb, Linkedin o Kickstarter*. Se caracteriza principalmente por estar muy optimizado y por tanto ofrecer gran velocidad de las aplicaciones que lo utilicen para entornos de la marca *Apple*. A su vez, destaca sus herramientas de detección y control de errores. 
+
+Otros lenguajes a mencionar son VBScript, utilizado para el desarrollo front-end en el navegador Internet Explorer y otros como como Python, Ruby, Dardo o PHP en los que no entrearemos en detalle debido a estar más orientados en la parte back-end.
 
 
 ## 4. Características de los Lenguajes de Script. Ventajas y Desventajas
@@ -106,11 +136,73 @@ Además de los lenguajes de programación, existen otras tecnologías asociadas 
 
 Creación de una pequeña aplicación web integrando código JavaScript de diferentes maneras.
 
+Ahora que hemos hablado tanto de JS, como de HTML y CSS, veamos un pequeño ejemplo de cómo se integra y ejecuta un código JS.
+
+Partimos de un pequeño script HTML:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="autor" content="Patricio">
+    <title>Ejemplo del trabajo</title>
+  </head>
+  <body>
+    <script src="ejemplo.js"></script>
+  </body>
+  <footer></footer>
+</html>
+```
+
+
+Como podemos observar es la etiqueta **script** la que nos enlaza el html con el archivo JavaScript mediante el atributo **src**.
+
+El código del archivo JS enlazado "ejemplo.js" podría ser:
+
+~~~
+console.log("Ejemplo de Patricio");
+~~~
+
+Al abrir el archivo HTML con el navegador se ejecutaría directamente el archivo JavaScript asociado. 
+
+Otra manera de ejecutar el código javascript es directamente en la consola de un navegador:
+
+![1695369461306](image/P1_CifredoReyesPatricio_DWEC/1695369461306.png)
+
+Por último, también podríamos utilizar el mismo código en un entorno de ejecución como *Node.js*.
+
+
 ## 6. Herramientas de Programación
 
-Uso de herramientas como Visual Studio Code, Chrome DevTools, etc.
+Dentro del desarrollo web de la parte del cliente se suele trabajar con una serie de tecnologías y herramientas que ayudan a los desarrolladores y desarrolladoras a desplegar los medios necesarios para crear la aplicación y mantenerla. Sus funciones suelen abarcar desde editores de texto, sistemas de control de versiones, bibliotecas o frameworks.
 
-## 7. Bibliografía
+Algunas son estándar en el desarrollo de aplicaciones web y otras dependen de las preferencias personales de la persona que trabaje en el proyecto, pero entre las más comunes podemos encontrar:
+
+* Visual Studio Code (VS Code): El VS Code es un editor de texto y código desarrollado por Microsoft que también cumple con funciones de IDE debido a la fácil integración de extensiones que amplian sus funcionalidades. Como queda reflejado en la página web oficial de *Microsoft* (2023), gracias a las extensiones el VS code permite trabajar con múltiples lenguajes, aunque está principalmente enfocado al desarrollo web y por tanto a TypeScript, Node JS y JavaScript.
+
+* Github: Esta conocida plataforma basada en Git sirve a su vez como repositorio en la nube y como sistema de control de versiones de proyectos de desarrollo. "Una Versión de Control ayuda a los desarrolladores llevar un registro y administrar cualquier cambio en el código del proyecto de software" (*Kinsta.com, 2020*). Es decir, aumenta la facilidad de colaboración y control en proyectos de equipos de desarrollo. Este 2023 Github alcanzó los 100 millones de usuarios. 
+En una entrada de este año, 2023, en su blog oficial, *Github.blog* anuncionarion que Github ya contaba con más de 100 millones de usuarios en todo el mundo.
+
+* Chrome DevTools: La página oficial *developer.chrome.com* (2016) habla de Chrome DevTools como un conjunto de herramientas de desarrollo que están incluidas en el propio navegador. Por tanto, permite aumentar la velocidad en el desarrollo de aplicaciones webs ya que ayuda a editar y detectar problemas rápidamente. Para acceder a ellas solo es necesario seleccionar la opción "Inspeccionar" o "Inspeccionar código fuente" al clicar con el botón derecho en la interfaz de la web que deseemos o sobre la que estemos trabajando.
+Mediante su consola podremos ejecutar JavaScript y con su opción *elements* podremos trabajar  directamente sobre el HTML y el CSS viendo los cambios en tiempo real. También podremos deputar código, crear y ejecutar snippets o incluso inspeccionar la actividad de red de la web.
+
+* React.js: Esta librería JavaScript "permite crear interfaces de usuario para aplicaciones webs a partir de componentes" (*es.react.dev*). Una de los principales atractivos de esta librería es que permite a las usuarias y usuarios crear sus propios componentes, los cuáles pueden ser utilizados sin problema por otras personas. Está muy enfocada al desarrollo de SPA (aplicaciones de una sola página).
+
+* Bootstrap: Es un framework de frontend basado en plantillas. Estas se basan de CSS, JS y HTML, simplificando y acelerando el desarrollo de la aplicación. *Deyimar* (2023) habla en su guía para principiantes sobre Bootstrap que este marco de trabajo está orientado a la creación de páginas web responsivas (adaptadas a todos los dispositivos).
+
+* Angular: Esta herramienta de desarrollo *front-end* es un framework de TypeScript. Como bien refleja la web oficial *docs.angular.lat*, *Angular* permite la creación de PWA (páginas web progresivas), y por tanto multiplataforma, de forma rápida y sencilla a través de plantillas de código ya optimizadas.
+
+Aunque nos hemos enfocado más en estas herramientas, existen muchísimas más en el desarrollo front-end, entre las que cabría también mecionar: *Materialize*, *JQuery*, *Lighthouse*, *NPM* y *Babel*.
+
+
+## 7. Conclusiones y cierre
+
+A lo largo de este trabajo hemos podido investigar e iniciarnos en el aprendizaje de conocimientos básicos sobre el desarrollo web del lado del cliente o "front-end", conociendo sus principales objetivos y las herramientas, lenguajes y tecnologías usadas para ello.
+
+A pesar de ello, como hemos indicado anteriormente, se trata solo de una aproximación inicial, que nos servirá para iniciar el camino, pero no hemos de olvidar que tendremos que seguir formandonos en el uso y los principios de esta disciplina que tanta importancia tiene para la adquisición de nuestra competencia profesional.
+
+
+## 8. Referencias
 
 https://www.itdo.com/blog/pwa-vs-spa-cual-elegir/
 
@@ -143,3 +235,20 @@ https://jairogarciarincon.com/clase/arquitecturas-y-herramientas-de-programacion
 https://kinsta.com/es/blog/lenguajes-script/ Monus 2023
 
 https://es.semrush.com/blog/html-semantico/ Mendoza Castro
+
+https://visualstudio.microsoft.com/es/#:~:text=Descargar%20Visual%20Studio-,Visual%20Studio%20Code,casi%20cualquier%20lenguaje%20de%20programaci%C3%B3n. 
+
+https://kinsta.com/es/base-de-conocimiento/que-es-github/ Kinsta.com 2020
+
+https://github.blog/2023-01-25-100-million-developers-and-counting/ Github.blog 2023
+
+https://developer.chrome.com/docs/devtools/overview/ Developer.chrome.com (2016)
+
+https://es.react.dev/
+
+https://www.hostinger.es/tutoriales/que-es-bootstrap Deyimar 2023
+
+https://docs.angular.lat/
+
+https://www.apple.com/es/swift/
+
