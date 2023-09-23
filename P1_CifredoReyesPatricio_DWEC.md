@@ -81,6 +81,9 @@ Para que un navegador ejecute Javascript, debemos escribir el mismo en un archiv
 
 Aun así, es muy común que hoy en día los propios navegadores tengan integrados una consola para desarrolladoras y desarrolladores que permita usar y ejecutar JavaScript. Como se indica en la entrada *"Running JavaScript in the Browser Console"* (2023) de la web *codeacademy.com* , la consola permite ejecutar JS dentro de la página, modificar su estructura (DOM) y ver la información que el navegador recopile.
 
+![1695490781188](https://qph.cf2.quoracdn.net/main-qimg-8a5906cd9433e55b95b624f810604dfb-pjlq).
+###### Figura 3. *Ejemplo de consola de desarrollo en el navegador Chrome* Copyright de Javier Revuelta. Extraído de: https://es.quora.com/D%C3%B3nde-est%C3%A1-la-consola-de-Javascript-en-Google-Chrome
+
 La mayoría de navegadores (*Chrome, firefox, Safari, Edge, Opera etc.*) son compatibles con alguna de las versiones de JavaScript. Aun así, la compatibilidad con ECMAScript 2024 (versión actual) y de sus APIs varia de uno a otro. Según *developer.mozilla.org* (2023), *Firefox* es uno de los navegadores con mejor implementación de las APIs de JavasCript, tanto en android como en PC. Aun así, este estudio podría estar sesgado al estar realizado por la propia compañía del navegador por lo que sus datos solo deben ser recogidos como informativos. 
 
 Una posible solución a la hora de resolver problemas de compatibilidad JavaScript con el navegador deseado sería utilizar alguna herramienta de compilación/transpilación que nos "traduzca" nuestro script actual a la versión que necesitamos para nuestro navegador.
@@ -135,7 +138,7 @@ Además de los lenguajes de programación, existen otras tecnologías asociadas 
 ##### Figura 5. Ejemplo de norma CSS. Copyright de *Hubspot*. Fuente: https://blog.hubspot.es/website/que-es-css
 
 
-Ahora que ya hemos hablado tanto de JS, como de HTML y CSS, veamos un pequeño ejemplo de cómo se integra y ejecuta un código JS.
+Ahora que ya hemos hablado tanto de JS, como de HTML y CSS, crearemos una pequeña y simple aplicación web de prueba para ver como se ejecuta el código de diferentes maneras:
 
 Partimos de un pequeño script HTML:
 ```html
